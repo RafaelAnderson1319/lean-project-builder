@@ -2,15 +2,11 @@ import type { ComponentType, ReactNode } from "react";
 import {
   ArrowRight,
   ChevronDown,
-  Facebook,
-  Instagram,
-  Linkedin,
   Menu,
   Search,
   ShoppingCart,
   Snowflake,
   X,
-  Youtube,
 } from "lucide-react";
 import { useState } from "react";
 
@@ -92,7 +88,6 @@ export function Footer() {
         <div><h3>Links rápidos</h3><a href="#inicio">Início</a><a href="#produtos">Produtos</a><a href="#servicos">Serviços</a><a href="#sobre">Sobre nós</a><a href="#contato">Contato</a></div>
         <div><h3>Nossos produtos</h3><a href="#produtos">Climatização</a><a href="#produtos">Aquecimento</a><a href="#produtos">Refrigeração</a><a href="#produtos">Acessórios</a></div>
         <div><h3>Contato</h3><p>+33 1 23 45 67 89</p><p>contact@cryofresh.fr</p><p>12 Rue des Thermes<br />75000 Paris, França</p></div>
-        <div><h3>Siga-nos</h3><div className="socials"><a href="#contato" aria-label="Facebook"><Facebook /></a><a href="#contato" aria-label="Instagram"><Instagram /></a><a href="#contato" aria-label="LinkedIn"><Linkedin /></a><a href="#contato" aria-label="YouTube"><Youtube /></a></div></div>
       </div>
       <div className="footer-bottom"><span>© 2025 CRYOFRESH. Todos os direitos reservados.</span><span>Avisos legais&nbsp;&nbsp; | &nbsp;&nbsp;Política de privacidade</span></div>
       <a className="back-top" href="#inicio" aria-label="Voltar ao topo">↑</a>
