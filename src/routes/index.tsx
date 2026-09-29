@@ -71,16 +71,16 @@ const services = [
 ];
 
 const testimonials = [
-  ["Serviço rápido, equipe profissional e produtos de ótima qualidade. Recomendo muito a Cryofresh!", "Daniel K.", "Abidjan, Côte d'Ivoire"],
-  ["Instalei um ar-condicionado Daikin com a Cryofresh e fiquei muito satisfeito. O conforto é excelente!", "Aminata D.", "Dakar, Sénégal"],
-  ["Excelente atendimento e orientação personalizada. Uma empresa séria e confiável!", "Sophie L.", "Paris, France"],
+  ["Serviço rápido, equipe profissional e produtos de ótima qualidade. Recomendo muito a Cryofresh!", "Daniel K.", "Abidjan, Costa do Marfim"],
+  ["Instalei um ar-condicionado Daikin com a Cryofresh e fiquei muito satisfeito. O conforto é excelente!", "Aminata D.", "Dacar, Senegal"],
+  ["Excelente atendimento e orientação personalizada. Uma empresa séria e confiável!", "Sophie L.", "Paris, França"],
 ] as const;
 
 function Index() {
   return (
     <main>
       <Header />
-      <section id="accueil" className="hero-section">
+      <section id="inicio" className="hero-section">
         <img className="hero-image" src={heroImage} alt="Casa moderna com piscina e unidade de climatização" width={1600} height={912} />
         <div className="hero-overlay" />
         <div className="hero-pills" aria-label="Áreas de atuação da CRYOFRESH">
@@ -93,14 +93,14 @@ function Index() {
           <p className="hero-subtitle">CLIMATIZAÇÃO & SOLUÇÕES TÉRMICAS</p>
           <h1>Seu <span>conforto</span>, nossa <span>prioridade</span></h1>
           <p>Soluções de climatização, aquecimento e refrigeração para um ambiente mais saudável, confortável e sustentável.</p>
-          <div className="hero-actions"><Button href="#produits">Conheça nossos produtos <ArrowRight size={17} /></Button><Button href="#services" variant="outline">Nossos serviços</Button></div>
+          <div className="hero-actions"><Button href="#produtos">Conheça nossos produtos <ArrowRight size={17} /></Button><Button href="#servicos" variant="outline">Nossos serviços</Button></div>
         </div>
       </section>
 
       <div className="benefit-band">{benefits.map((item) => <IconFeature key={item.title} {...item} />)}</div>
 
-      <Section id="produits">
-        <SectionHeading eyebrow="▸ NOSSOS PRODUTOS" title="Soluções para todas as suas necessidades" text="Conheça nossa linha completa de climatizadores, sistemas de aquecimento, refrigeração e acessórios." action={<a className="text-link" href="#produits">Ver todos os produtos <ArrowRight size={15} /></a>} />
+      <Section id="produtos">
+        <SectionHeading eyebrow="▸ NOSSOS PRODUTOS" title="Soluções para todas as suas necessidades" text="Conheça nossa linha completa de climatizadores, sistemas de aquecimento, refrigeração e acessórios." action={<a className="text-link" href="#produtos">Ver todos os produtos <ArrowRight size={15} /></a>} />
         <div className="product-grid">
           {products.map((product) => (
             <Card key={product.title} className="product-card">
@@ -115,12 +115,12 @@ function Index() {
       <Section className="offer-section">
         <div className="offer-product">
           <div className="price-badge"><span>OFERTA ESPECIAL</span><strong>2.050€</strong><small>DE <s>3.550€</s></small></div>
-          <img src={productsImage} alt="Système Daikin Stylish" loading="lazy" width={1200} height={800} />
+          <img src={productsImage} alt="Sistema Daikin Stylish" loading="lazy" width={1200} height={800} />
         </div>
         <div className="offer-details">
           <p className="daikin">DAIKIN</p>
           <h2>STYLISH</h2>
-          <strong className="offer-label">TRI-SPLIT INVERTER-SYSTEM</strong>
+          <strong className="offer-label">SISTEMA INVERTER TRI-SPLIT</strong>
           <p className="offer-tech">TECNOLOGIA REVERSÍVEL</p>
           <div className="offer-list">
             {offerBullets.map(([title, text]) => <IconFeature key={title} icon={CheckCircle2} title={title} text={text} />)}
@@ -128,24 +128,24 @@ function Index() {
         </div>
         <aside className="offer-panel">
           <p>Um sistema eficiente e elegante composto por uma unidade externa e três unidades internas para máximo conforto durante todo o ano.</p>
-          <Button href="#contact" variant="light">Saiba mais <ArrowRight size={16} /></Button>
+          <Button href="#contato" variant="light">Saiba mais <ArrowRight size={16} /></Button>
           <div className="composition"><strong>COMPOSIÇÃO DO SISTEMA</strong><div><PackageCheck /><span><b>1 UNIDADE EXTERNA</b>Alimenta 3 unidades internas</span></div><div><Fan /><span><b>3 UNIDADES INTERNAS</b>2 x 9 000 BTU (Branco), 1 x 12 000 BTU (Preto)</span></div></div>
         </aside>
       </Section>
 
-      <Section id="apropos" className="about-section">
+      <Section id="sobre" className="about-section">
         <div className="about-copy">
           <img src={buildingImage} alt="Edifício CRYOFRESH" loading="lazy" width={1200} height={800} />
-          <div><p className="eyebrow">▸ SOBRE A CRYOFRESH</p><h2>Sua parceira em soluções térmicas</h2><p>A CRYOFRESH é especializada na venda, instalação e manutenção de sistemas de climatização, aquecimento e refrigeração. Oferecemos produtos de alta qualidade das principais marcas, com um atendimento ao cliente de excelência.</p><Button href="#contact">Saiba mais <ArrowRight size={16} /></Button></div>
+          <div><p className="eyebrow">▸ SOBRE A CRYOFRESH</p><h2>Sua parceira em soluções térmicas</h2><p>A CRYOFRESH é especializada na venda, instalação e manutenção de sistemas de climatização, aquecimento e refrigeração. Oferecemos produtos de alta qualidade das principais marcas, com um atendimento ao cliente de excelência.</p><Button href="#contato">Saiba mais <ArrowRight size={16} /></Button></div>
         </div>
-        <Card className="services-card" id="services">
+        <Card className="services-card" id="servicos">
           <h2>Nossos serviços</h2><p>Uma equipe de especialistas à sua disposição</p>
-          {services.map((service) => <a className="service-row" key={service.title} href="#contact"><service.icon size={24} /><span><strong>{service.title}</strong><small>{service.text}</small></span><ArrowRight size={18} /></a>)}
+          {services.map((service) => <a className="service-row" key={service.title} href="#contato"><service.icon size={24} /><span><strong>{service.title}</strong><small>{service.text}</small></span><ArrowRight size={18} /></a>)}
         </Card>
       </Section>
 
       <Section>
-        <SectionHeading title="Depoimentos" text="Nossos clientes confiam em nós" action={<a className="text-link" href="#contact">Ver mais avaliações <ArrowRight size={15} /></a>} />
+        <SectionHeading title="Depoimentos" text="Nossos clientes confiam em nós" action={<a className="text-link" href="#contato">Ver mais avaliações <ArrowRight size={15} /></a>} />
         <div className="testimonial-grid">
           {testimonials.map(([quote, name, city]) => <Card key={name} className="testimonial-card"><p>“{quote}”</p><div><span className="avatar">{name.charAt(0)}</span><span><strong>{name}</strong><small>{city}</small></span></div><span className="stars" aria-label="5 estrelas"><Star /><Star /><Star /><Star /><Star /></span></Card>)}
         </div>
