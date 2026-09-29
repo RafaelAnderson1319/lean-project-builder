@@ -16,7 +16,7 @@ import { useState } from "react";
 
 export function Brand({ inverse = false }: { inverse?: boolean }) {
   return (
-    <a href="#accueil" className="brand" aria-label="CRYOFRESH, início">
+    <a href="#inicio" className="brand" aria-label="CRYOFRESH, início">
       <span className={inverse ? "brand-mark brand-mark-inverse" : "brand-mark"}>
         <Snowflake aria-hidden="true" />
       </span>
@@ -43,7 +43,7 @@ export function Card({ children, className = "", id }: { children: ReactNode; cl
 export function Header() {
   const [open, setOpen] = useState(false);
   const links = [
-    ["Início", "#accueil"], ["Produtos", "#produits"], ["Serviços", "#services"], ["Sobre nós", "#apropos"], ["Contato", "#contact"],
+    ["Início", "#inicio"], ["Produtos", "#produtos"], ["Serviços", "#servicos"], ["Sobre nós", "#sobre"], ["Contato", "#contato"],
   ];
   return (
     <header className="site-header">
@@ -57,9 +57,9 @@ export function Header() {
           ))}
         </nav>
         <div className="header-actions">
-          <a className="icon-action desktop-action" href="#produits" aria-label="Pesquisar"><Search size={19} /></a>
-          <a className="cart-action desktop-action" href="#produits" aria-label="Carrinho, nenhum item"><ShoppingCart size={20} /><span>0</span></a>
-          <Button href="#produits">Comprar agora</Button>
+          <a className="icon-action desktop-action" href="#produtos" aria-label="Pesquisar"><Search size={19} /></a>
+          <a className="cart-action desktop-action" href="#produtos" aria-label="Carrinho, nenhum item"><ShoppingCart size={20} /><span>0</span></a>
+          <Button href="#produtos">Comprar agora</Button>
           <button className="menu-toggle" type="button" onClick={() => setOpen(!open)} aria-label={open ? "Fechar menu" : "Abrir menu"}>{open ? <X /> : <Menu />}</button>
         </div>
       </div>
@@ -89,13 +89,13 @@ export function Footer() {
     <footer id="contact" className="site-footer">
       <div className="footer-grid">
         <div><Brand inverse /><p>Seu conforto térmico, nossa especialidade.</p></div>
-        <div><h3>Links rápidos</h3><a href="#accueil">Início</a><a href="#produits">Produtos</a><a href="#services">Services</a><a href="#apropos">Sobre nós</a><a href="#contact">Contact</a></div>
-        <div><h3>Nossos produtos</h3><a href="#produits">Climatização</a><a href="#produits">Aquecimento</a><a href="#produits">Refrigeração</a><a href="#produits">Acessórios</a></div>
-        <div><h3>Contact</h3><p>+33 1 23 45 67 89</p><p>contact@cryofresh.fr</p><p>12 Rue des Thermes<br />75000 Paris, França</p></div>
-        <div><h3>Siga-nos</h3><div className="socials"><a href="#contact" aria-label="Facebook"><Facebook /></a><a href="#contact" aria-label="Instagram"><Instagram /></a><a href="#contact" aria-label="LinkedIn"><Linkedin /></a><a href="#contact" aria-label="YouTube"><Youtube /></a></div></div>
+        <div><h3>Links rápidos</h3><a href="#inicio">Início</a><a href="#produtos">Produtos</a><a href="#servicos">Serviços</a><a href="#sobre">Sobre nós</a><a href="#contato">Contato</a></div>
+        <div><h3>Nossos produtos</h3><a href="#produtos">Climatização</a><a href="#produtos">Aquecimento</a><a href="#produtos">Refrigeração</a><a href="#produtos">Acessórios</a></div>
+        <div><h3>Contato</h3><p>+33 1 23 45 67 89</p><p>contact@cryofresh.fr</p><p>12 Rue des Thermes<br />75000 Paris, França</p></div>
+        <div><h3>Siga-nos</h3><div className="socials"><a href="#contato" aria-label="Facebook"><Facebook /></a><a href="#contato" aria-label="Instagram"><Instagram /></a><a href="#contato" aria-label="LinkedIn"><Linkedin /></a><a href="#contato" aria-label="YouTube"><Youtube /></a></div></div>
       </div>
       <div className="footer-bottom"><span>© 2025 CRYOFRESH. Todos os direitos reservados.</span><span>Avisos legais&nbsp;&nbsp; | &nbsp;&nbsp;Política de privacidade</span></div>
-      <a className="back-top" href="#accueil" aria-label="Voltar ao topo">↑</a>
+      <a className="back-top" href="#inicio" aria-label="Voltar ao topo">↑</a>
     </footer>
   );
 }
