@@ -16,13 +16,13 @@ import { useState } from "react";
 
 export function Brand({ inverse = false }: { inverse?: boolean }) {
   return (
-    <a href="#accueil" className="brand" aria-label="CRYOFRESH, accueil">
+    <a href="#accueil" className="brand" aria-label="CRYOFRESH, início">
       <span className={inverse ? "brand-mark brand-mark-inverse" : "brand-mark"}>
         <Snowflake aria-hidden="true" />
       </span>
       <span className={inverse ? "brand-copy brand-copy-inverse" : "brand-copy"}>
         <strong>CRYO<span>FRESH</span></strong>
-        <small>COOLING SOLUTIONS</small>
+        <small>SOLUÇÕES DE CLIMATIZAÇÃO</small>
       </span>
     </a>
   );
@@ -43,13 +43,13 @@ export function Card({ children, className = "", id }: { children: ReactNode; cl
 export function Header() {
   const [open, setOpen] = useState(false);
   const links = [
-    ["Home", "#accueil"], ["Products", "#produits"], ["Services", "#services"], ["About Us", "#apropos"], ["Contact", "#contact"],
+    ["Início", "#accueil"], ["Produtos", "#produits"], ["Serviços", "#services"], ["Sobre nós", "#apropos"], ["Contato", "#contact"],
   ];
   return (
     <header className="site-header">
       <div className="header-inner">
         <Brand />
-        <nav className={open ? "main-nav main-nav-open" : "main-nav"} aria-label="Navigation principale">
+        <nav className={open ? "main-nav main-nav-open" : "main-nav"} aria-label="Navegação principal">
           {links.map(([label, href], index) => (
             <a key={label} className={index === 0 ? "nav-link nav-link-active" : "nav-link"} href={href} onClick={() => setOpen(false)}>
               {label}{index === 1 || index === 2 ? <ChevronDown size={13} aria-hidden="true" /> : null}
@@ -57,10 +57,10 @@ export function Header() {
           ))}
         </nav>
         <div className="header-actions">
-          <a className="icon-action desktop-action" href="#produits" aria-label="Rechercher"><Search size={19} /></a>
-          <a className="cart-action desktop-action" href="#produits" aria-label="Panier, aucun article"><ShoppingCart size={20} /><span>0</span></a>
-          <Button href="#produits">Shop Now</Button>
-          <button className="menu-toggle" type="button" onClick={() => setOpen(!open)} aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}>{open ? <X /> : <Menu />}</button>
+          <a className="icon-action desktop-action" href="#produits" aria-label="Pesquisar"><Search size={19} /></a>
+          <a className="cart-action desktop-action" href="#produits" aria-label="Carrinho, nenhum item"><ShoppingCart size={20} /><span>0</span></a>
+          <Button href="#produits">Comprar agora</Button>
+          <button className="menu-toggle" type="button" onClick={() => setOpen(!open)} aria-label={open ? "Fechar menu" : "Abrir menu"}>{open ? <X /> : <Menu />}</button>
         </div>
       </div>
     </header>
@@ -88,14 +88,14 @@ export function Footer() {
   return (
     <footer id="contact" className="site-footer">
       <div className="footer-grid">
-        <div><Brand inverse /><p>Votre confort thermique, notre expertise.</p></div>
-        <div><h3>Liens rapides</h3><a href="#accueil">Accueil</a><a href="#produits">Produits</a><a href="#services">Services</a><a href="#apropos">À propos</a><a href="#contact">Contact</a></div>
-        <div><h3>Nos produits</h3><a href="#produits">Climatisation</a><a href="#produits">Chauffage</a><a href="#produits">Réfrigération</a><a href="#produits">Accessoires</a></div>
-        <div><h3>Contact</h3><p>+33 1 23 45 67 89</p><p>contact@cryofresh.fr</p><p>12 Rue des Thermes<br />75000 Paris, France</p></div>
-        <div><h3>Suivez-nous</h3><div className="socials"><a href="#contact" aria-label="Facebook"><Facebook /></a><a href="#contact" aria-label="Instagram"><Instagram /></a><a href="#contact" aria-label="LinkedIn"><Linkedin /></a><a href="#contact" aria-label="YouTube"><Youtube /></a></div></div>
+        <div><Brand inverse /><p>Seu conforto térmico, nossa especialidade.</p></div>
+        <div><h3>Links rápidos</h3><a href="#accueil">Início</a><a href="#produits">Produtos</a><a href="#services">Services</a><a href="#apropos">Sobre nós</a><a href="#contact">Contact</a></div>
+        <div><h3>Nossos produtos</h3><a href="#produits">Climatização</a><a href="#produits">Aquecimento</a><a href="#produits">Refrigeração</a><a href="#produits">Acessórios</a></div>
+        <div><h3>Contact</h3><p>+33 1 23 45 67 89</p><p>contact@cryofresh.fr</p><p>12 Rue des Thermes<br />75000 Paris, França</p></div>
+        <div><h3>Siga-nos</h3><div className="socials"><a href="#contact" aria-label="Facebook"><Facebook /></a><a href="#contact" aria-label="Instagram"><Instagram /></a><a href="#contact" aria-label="LinkedIn"><Linkedin /></a><a href="#contact" aria-label="YouTube"><Youtube /></a></div></div>
       </div>
-      <div className="footer-bottom"><span>© 2025 CRYOFRESH. Tous droits réservés.</span><span>Mentions légales&nbsp;&nbsp; | &nbsp;&nbsp;Politique de confidentialité</span></div>
-      <a className="back-top" href="#accueil" aria-label="Retour en haut">↑</a>
+      <div className="footer-bottom"><span>© 2025 CRYOFRESH. Todos os direitos reservados.</span><span>Avisos legais&nbsp;&nbsp; | &nbsp;&nbsp;Política de privacidade</span></div>
+      <a className="back-top" href="#accueil" aria-label="Voltar ao topo">↑</a>
     </footer>
   );
 }
