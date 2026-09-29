@@ -62,7 +62,7 @@ const offerBullets = [
   ["WiFi intégré", "Contrôle à distance via l'application Daikin Onecta."],
   ["Ultra silencieux", "Fonctionnement discret pour un confort absolu."],
   ["Design élégant", "Unité intérieure Stylish : élégante, compacte et moderne."],
-];
+] as const;
 
 const services = [
   { icon: Wrench, title: "Installation", text: "Mise en place professionnelle" },
@@ -74,7 +74,7 @@ const testimonials = [
   ["Service rapide, équipe professionnelle et produits de très bonne qualité. Je recommande vivement Cryofresh !", "Daniel K.", "Abidjan, Côte d'Ivoire"],
   ["J'ai installé un climatiseur Daikin avec Cryofresh et je suis très satisfait. Le confort est au rendez-vous !", "Aminata D.", "Dakar, Sénégal"],
   ["Excellente prise en charge et conseils personnalisés. Une entreprise sérieuse et fiable !", "Sophie L.", "Paris, France"],
-];
+] as const;
 
 function Index() {
   return (
