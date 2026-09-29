@@ -20,19 +20,19 @@ Regras de economia para este projeto (siga em todas as mensagens):
 
 9. Se algo der erro, corrija apenas o erro, sem reestruturar o restante.
 
-This project was built with [Lovable](https://lovable.dev).
+Este projeto foi criado com [Lovable](https://lovable.dev).
 
-## Build with Lovable
+## Desenvolva com Lovable
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/d71d7555-4405-4fe9-8443-7298ed2e642b).
+Continue desenvolvendo este projeto no [editor Lovable](https://lovable.dev/projects/d71d7555-4405-4fe9-8443-7298ed2e642b).
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+- **Desenvolva mais rápido**: descreva o que você quer criar e o Lovable cuida do código.
+- **Mantenha tudo sincronizado**: cada alteração feita no Lovable é enviada diretamente para este repositório.
+- **Controle total**: este código é seu. Envie as alterações para a `main` no GitHub e elas serão sincronizadas de volta com o Lovable, prontas para o próximo comando.
 
-## Development
+## Desenvolvimento
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+Prefere trabalhar localmente? Você precisa do Node.js e do npm — [instale com o nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
 
 ```sh
 git clone <this-repository-url>
