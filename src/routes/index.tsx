@@ -30,10 +30,10 @@ import { Button, Card, Footer, Header, IconFeature, RoundArrow, Section, Section
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "CRYOFRESH – Climatisation & Solutions Thermiques" },
-      { name: "description", content: "Landing page CRYOFRESH pour climatisation, chauffage, réfrigération et services thermiques." },
-      { property: "og:title", content: "CRYOFRESH – Solutions thermiques premium" },
-      { property: "og:description", content: "Découvrez les produits, services et offres CRYOFRESH pour votre confort thermique." },
+      { title: "CRYOFRESH – Climatização & Soluções Térmicas" },
+      { name: "description", content: "Landing page CRYOFRESH para climatização, aquecimento, refrigeração e serviços térmicos." },
+      { property: "og:title", content: "CRYOFRESH – Soluções térmicas premium" },
+      { property: "og:description", content: "Conheça os produtos, serviços e ofertas CRYOFRESH para o seu conforto térmico." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -42,38 +42,38 @@ export const Route = createFileRoute("/")({
 });
 
 const benefits = [
-  { icon: ShieldCheck, title: "Produits de qualité", text: "Marques de confiance" },
-  { icon: Wrench, title: "Installation professionnelle", text: "Par des experts" },
-  { icon: Truck, title: "Livraison rapide", text: "Partout en France" },
-  { icon: Headphones, title: "Service client", text: "À votre écoute" },
-  { icon: Leaf, title: "Économie d'énergie", text: "Solutions durables" },
+  { icon: ShieldCheck, title: "Produtos de qualidade", text: "Marcas de confiança" },
+  { icon: Wrench, title: "Instalação profissional", text: "Feita por especialistas" },
+  { icon: Truck, title: "Entrega rápida", text: "Em toda a França" },
+  { icon: Headphones, title: "Atendimento ao cliente", text: "Sempre à sua disposição" },
+  { icon: Leaf, title: "Economia de energia", text: "Soluções sustentáveis" },
 ];
 
 const products = [
-  { title: "Climatisation", text: "Confort en toute saison", image: productsImage },
-  { title: "Chauffage", text: "Chaleur et bien-être", image: productsImage },
-  { title: "Réfrigération", text: "Conservation optimale", image: coldRoomsImage },
-  { title: "Accessoires", text: "Performance et fiabilité", image: productsImage },
+  { title: "Climatização", text: "Conforto em todas as estações", image: productsImage },
+  { title: "Aquecimento", text: "Calor e bem-estar", image: productsImage },
+  { title: "Refrigeração", text: "Conservação ideal", image: coldRoomsImage },
+  { title: "Acessórios", text: "Desempenho e confiabilidade", image: productsImage },
 ];
 
 const offerBullets = [
-  ["Froid & Chaud", "Confort en été comme en hiver grâce à la technologie réversible."],
-  ["Haute efficacité", "Technologie inverter pour des économies d'énergie et des performances optimales."],
-  ["WiFi intégré", "Contrôle à distance via l'application Daikin Onecta."],
-  ["Ultra silencieux", "Fonctionnement discret pour un confort absolu."],
-  ["Design élégant", "Unité intérieure Stylish : élégante, compacte et moderne."],
+  ["Frio e Calor", "Conforto no verão e no inverno graças à tecnologia reversível."],
+  ["Alta eficiência", "Tecnologia inverter para economia de energia e desempenho ideal."],
+  ["Wi-Fi integrado", "Controle à distância pelo aplicativo Daikin Onecta."],
+  ["Ultrassilencioso", "Funcionamento discreto para máximo conforto."],
+  ["Design elegante", "Unidade interna Stylish: elegante, compacta e moderna."],
 ] as const;
 
 const services = [
-  { icon: Wrench, title: "Installation", text: "Mise en place professionnelle" },
-  { icon: BadgeCheck, title: "Maintenance", text: "Longévité et performance" },
-  { icon: ThermometerSun, title: "Réparation", text: "Intervention rapide et efficace" },
+  { icon: Wrench, title: "Instalação", text: "Instalação profissional" },
+  { icon: BadgeCheck, title: "Manutenção", text: "Durabilidade e desempenho" },
+  { icon: ThermometerSun, title: "Reparo", text: "Atendimento rápido e eficiente" },
 ];
 
 const testimonials = [
-  ["Service rapide, équipe professionnelle et produits de très bonne qualité. Je recommande vivement Cryofresh !", "Daniel K.", "Abidjan, Côte d'Ivoire"],
-  ["J'ai installé un climatiseur Daikin avec Cryofresh et je suis très satisfait. Le confort est au rendez-vous !", "Aminata D.", "Dakar, Sénégal"],
-  ["Excellente prise en charge et conseils personnalisés. Une entreprise sérieuse et fiable !", "Sophie L.", "Paris, France"],
+  ["Serviço rápido, equipe profissional e produtos de ótima qualidade. Recomendo muito a Cryofresh!", "Daniel K.", "Abidjan, Côte d'Ivoire"],
+  ["Instalei um ar-condicionado Daikin com a Cryofresh e fiquei muito satisfeito. O conforto é excelente!", "Aminata D.", "Dakar, Sénégal"],
+  ["Excelente atendimento e orientação personalizada. Uma empresa séria e confiável!", "Sophie L.", "Paris, France"],
 ] as const;
 
 function Index() {
@@ -81,26 +81,26 @@ function Index() {
     <main>
       <Header />
       <section id="accueil" className="hero-section">
-        <img className="hero-image" src={heroImage} alt="Maison moderne avec piscine et unité de climatisation" width={1600} height={912} />
+        <img className="hero-image" src={heroImage} alt="Casa moderna com piscina e unidade de climatização" width={1600} height={912} />
         <div className="hero-overlay" />
-        <div className="hero-pills" aria-label="Domaines CRYOFRESH">
-          <span><Snowflake size={18} />Climatisation</span>
-          <span><Sun size={18} />Chauffage</span>
-          <span><Leaf size={18} />Énergie durable</span>
+        <div className="hero-pills" aria-label="Áreas de atuação da CRYOFRESH">
+          <span><Snowflake size={18} />Climatização</span>
+          <span><Sun size={18} />Aquecimento</span>
+          <span><Leaf size={18} />Energia sustentável</span>
         </div>
         <div className="hero-content">
           <Brand />
-          <p className="hero-subtitle">CLIMATISATION & SOLUTIONS THERMIQUES</p>
-          <h1>Votre <span>confort</span>, notre <span>priorité</span></h1>
-          <p>Des solutions de climatisation, de chauffage et de réfrigération pour un environnement plus sain, plus confortable et plus durable.</p>
-          <div className="hero-actions"><Button href="#produits">Découvrir nos produits <ArrowRight size={17} /></Button><Button href="#services" variant="outline">Nos services</Button></div>
+          <p className="hero-subtitle">CLIMATIZAÇÃO & SOLUÇÕES TÉRMICAS</p>
+          <h1>Seu <span>conforto</span>, nossa <span>prioridade</span></h1>
+          <p>Soluções de climatização, aquecimento e refrigeração para um ambiente mais saudável, confortável e sustentável.</p>
+          <div className="hero-actions"><Button href="#produits">Conheça nossos produtos <ArrowRight size={17} /></Button><Button href="#services" variant="outline">Nossos serviços</Button></div>
         </div>
       </section>
 
       <div className="benefit-band">{benefits.map((item) => <IconFeature key={item.title} {...item} />)}</div>
 
       <Section id="produits">
-        <SectionHeading eyebrow="▸ NOS PRODUITS" title="Des solutions pour tous vos besoins" text="Découvrez notre gamme complète de climatiseurs, systèmes de chauffage, réfrigération et accessoires." action={<a className="text-link" href="#produits">Voir tous les produits <ArrowRight size={15} /></a>} />
+        <SectionHeading eyebrow="▸ NOSSOS PRODUTOS" title="Soluções para todas as suas necessidades" text="Conheça nossa linha completa de climatizadores, sistemas de aquecimento, refrigeração e acessórios." action={<a className="text-link" href="#produits">Ver todos os produtos <ArrowRight size={15} /></a>} />
         <div className="product-grid">
           {products.map((product) => (
             <Card key={product.title} className="product-card">
@@ -114,40 +114,40 @@ function Index() {
 
       <Section className="offer-section">
         <div className="offer-product">
-          <div className="price-badge"><span>OFFRE EXCEPTIONNELLE</span><strong>2.050€</strong><small>AU LIEU DE <s>3.550€</s></small></div>
+          <div className="price-badge"><span>OFERTA ESPECIAL</span><strong>2.050€</strong><small>DE <s>3.550€</s></small></div>
           <img src={productsImage} alt="Système Daikin Stylish" loading="lazy" width={1200} height={800} />
         </div>
         <div className="offer-details">
           <p className="daikin">DAIKIN</p>
           <h2>STYLISH</h2>
           <strong className="offer-label">TRI-SPLIT INVERTER-SYSTEM</strong>
-          <p className="offer-tech">TECHNOLOGIE RÉVERSIBLE</p>
+          <p className="offer-tech">TECNOLOGIA REVERSÍVEL</p>
           <div className="offer-list">
             {offerBullets.map(([title, text]) => <IconFeature key={title} icon={CheckCircle2} title={title} text={text} />)}
           </div>
         </div>
         <aside className="offer-panel">
-          <p>Un système performant et élégant composé d'une unité extérieure et de trois unités intérieures pour un confort optimal toute l'année.</p>
-          <Button href="#contact" variant="light">En savoir plus <ArrowRight size={16} /></Button>
-          <div className="composition"><strong>COMPOSITION DU SYSTÈME</strong><div><PackageCheck /><span><b>1 UNITÉ EXTÉRIEURE</b>Alimente 3 unités intérieures</span></div><div><Fan /><span><b>3 UNITÉS INTÉRIEURES</b>2 x 9 000 BTU (Blanc), 1 x 12 000 BTU (Noir)</span></div></div>
+          <p>Um sistema eficiente e elegante composto por uma unidade externa e três unidades internas para máximo conforto durante todo o ano.</p>
+          <Button href="#contact" variant="light">Saiba mais <ArrowRight size={16} /></Button>
+          <div className="composition"><strong>COMPOSIÇÃO DO SISTEMA</strong><div><PackageCheck /><span><b>1 UNIDADE EXTERNA</b>Alimenta 3 unidades internas</span></div><div><Fan /><span><b>3 UNIDADES INTERNAS</b>2 x 9 000 BTU (Branco), 1 x 12 000 BTU (Preto)</span></div></div>
         </aside>
       </Section>
 
       <Section id="apropos" className="about-section">
         <div className="about-copy">
-          <img src={buildingImage} alt="Bâtiment CRYOFRESH" loading="lazy" width={1200} height={800} />
-          <div><p className="eyebrow">▸ À propos de CRYOFRESH</p><h2>Votre partenaire en solutions thermiques</h2><p>CRYOFRESH est spécialisée dans la vente, l'installation et la maintenance de systèmes de climatisation, de chauffage et de réfrigération. Nous proposons des produits de haute qualité des grandes marques, avec un service client irréprochable.</p><Button href="#contact">En savoir plus <ArrowRight size={16} /></Button></div>
+          <img src={buildingImage} alt="Edifício CRYOFRESH" loading="lazy" width={1200} height={800} />
+          <div><p className="eyebrow">▸ SOBRE A CRYOFRESH</p><h2>Sua parceira em soluções térmicas</h2><p>A CRYOFRESH é especializada na venda, instalação e manutenção de sistemas de climatização, aquecimento e refrigeração. Oferecemos produtos de alta qualidade das principais marcas, com um atendimento ao cliente de excelência.</p><Button href="#contact">Saiba mais <ArrowRight size={16} /></Button></div>
         </div>
         <Card className="services-card" id="services">
-          <h2>Nos services</h2><p>Une équipe d'experts à votre service</p>
+          <h2>Nossos serviços</h2><p>Uma equipe de especialistas à sua disposição</p>
           {services.map((service) => <a className="service-row" key={service.title} href="#contact"><service.icon size={24} /><span><strong>{service.title}</strong><small>{service.text}</small></span><ArrowRight size={18} /></a>)}
         </Card>
       </Section>
 
       <Section>
-        <SectionHeading title="Témoignages" text="Nos clients nous font confiance" action={<a className="text-link" href="#contact">Voir plus d'avis <ArrowRight size={15} /></a>} />
+        <SectionHeading title="Depoimentos" text="Nossos clientes confiam em nós" action={<a className="text-link" href="#contact">Ver mais avaliações <ArrowRight size={15} /></a>} />
         <div className="testimonial-grid">
-          {testimonials.map(([quote, name, city]) => <Card key={name} className="testimonial-card"><p>“{quote}”</p><div><span className="avatar">{name.charAt(0)}</span><span><strong>{name}</strong><small>{city}</small></span></div><span className="stars" aria-label="5 étoiles"><Star /><Star /><Star /><Star /><Star /></span></Card>)}
+          {testimonials.map(([quote, name, city]) => <Card key={name} className="testimonial-card"><p>“{quote}”</p><div><span className="avatar">{name.charAt(0)}</span><span><strong>{name}</strong><small>{city}</small></span></div><span className="stars" aria-label="5 estrelas"><Star /><Star /><Star /><Star /><Star /></span></Card>)}
         </div>
       </Section>
       <Footer />
