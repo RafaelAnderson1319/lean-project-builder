@@ -81,14 +81,24 @@ function Index() {
     <main>
       <Header />
       <section id="inicio" className="hero-section">
-        <img className="hero-image" src={heroImage} alt="Casa moderna com piscina e unidade de climatização" width={1600} height={912} />
+        <div className="hero-media" aria-hidden="true">
+          <img className="hero-image" src={heroImage} alt="" width={1600} height={912} />
+          <div className="hero-cooling-flow">
+            <span className="air-stream air-stream-1" />
+            <span className="air-stream air-stream-2" />
+            <span className="air-stream air-stream-3" />
+            <span className="air-stream air-stream-4" />
+          </div>
+          <div className="hero-snow" />
+          <div className="hero-light-sweep" />
+        </div>
         <div className="hero-overlay" />
-        <div className="hero-pills" aria-label="Áreas de atuação da CRYOFRESH">
+        <div className="hero-pills hero-enter hero-enter-1" aria-label="Áreas de atuação da CRYOFRESH">
           <span><Snowflake size={18} />Climatização</span>
           <span><Sun size={18} />Aquecimento</span>
           <span><Leaf size={18} />Energia sustentável</span>
         </div>
-        <div className="hero-content">
+        <div className="hero-content hero-enter hero-enter-2">
           <Brand />
           <p className="hero-subtitle">CLIMATIZAÇÃO & SOLUÇÕES TÉRMICAS</p>
           <h1>Seu <span>conforto</span>, nossa <span>prioridade</span></h1>
