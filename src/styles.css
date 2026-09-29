@@ -237,7 +237,7 @@
   .site-header .brand-copy small { display: none; }
   .site-header .button { display: none; }
   .main-nav { top: 68px; }
-  .hero-section { min-height: 620px; padding-top: 68px; }
+  .hero-section { min-height: 0; padding-top: 68px; }
   .hero-content { padding-top: 58px; }
   .hero-content .brand { transform: scale(1); }
   .hero-overlay { background: linear-gradient(90deg, var(--background) 0%, color-mix(in oklab, var(--background) 84%, transparent) 65%, color-mix(in oklab, var(--background) 48%, transparent) 100%); }
@@ -273,7 +273,7 @@
 
 @media (max-width: 768px) {
   .hero-section { min-height: auto; }
-  .hero-content { min-height: 600px; display: flex; flex-direction: column; justify-content: center; }
+  .hero-content { min-height: 0; display: flex; flex-direction: column; justify-content: center; }
   .hero-content h1 { font-size: clamp(2.35rem, 10vw, 4rem); }
   .hero-content p:not(.hero-subtitle) { max-width: 92%; }
   .benefit-band { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -295,7 +295,7 @@
   .brand-mark, .brand-mark svg { width: 40px; height: 40px; }
   .brand-copy strong { font-size: 1.2rem; }
   .main-nav { left: 10px; right: 10px; }
-  .hero-content { min-height: 570px; padding: 42px 0; }
+  .hero-content { min-height: 0; padding: 42px 0 48px; }
   .hero-subtitle { font-size: .68rem; line-height: 1.6; letter-spacing: .2em; }
   .hero-content p:not(.hero-subtitle) { max-width: 100%; font-size: .98rem; }
   .hero-actions { width: 100%; }
