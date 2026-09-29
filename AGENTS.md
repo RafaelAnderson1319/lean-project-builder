@@ -8,3 +8,4 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+- Keep the CRYOFRESH landing page as a single route and compose it from shared Header, Footer, Section, Card, and Button components to avoid duplication.
