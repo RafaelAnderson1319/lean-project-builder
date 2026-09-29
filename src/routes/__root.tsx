@@ -122,7 +122,7 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
+      {/* Necessário: as rotas aninhadas são renderizadas aqui. Remover <Outlet /> interrompe as rotas filhas. */}
       <Outlet />
     </QueryClientProvider>
   );
