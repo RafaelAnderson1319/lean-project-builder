@@ -36,8 +36,8 @@ export function Section({ id, children, className = "" }: { id?: string; childre
   return <section id={id} className={`page-section ${className}`}>{children}</section>;
 }
 
-export function Card({ children, className = "" }: { children: ReactNode; className?: string }) {
-  return <article className={`content-card ${className}`}>{children}</article>;
+export function Card({ children, className = "", id }: { children: ReactNode; className?: string; id?: string }) {
+  return <article id={id} className={`content-card ${className}`}>{children}</article>;
 }
 
 export function Header() {
