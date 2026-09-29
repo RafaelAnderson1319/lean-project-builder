@@ -23,7 +23,6 @@ import {
 
 import buildingImage from "@/assets/company-building.jpg";
 import coldRoomsImage from "@/assets/cold-rooms.jpg";
-import heroImage from "@/assets/cryofresh-hero.jpg";
 import productsImage from "@/assets/hvac-products.jpg";
 import { Button, Card, Footer, Header, IconFeature, RoundArrow, Section, SectionHeading, Brand } from "@/components/cryofresh";
 
@@ -82,7 +81,6 @@ function Index() {
       <Header />
       <section id="inicio" className="hero-section">
         <div className="hero-media" aria-hidden="true">
-          <img className="hero-image" src={heroImage} alt="" width={1600} height={912} />
           <div className="hero-cooling-flow">
             <span className="air-stream air-stream-1" />
             <span className="air-stream air-stream-2" />
