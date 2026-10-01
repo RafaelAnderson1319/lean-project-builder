@@ -82,7 +82,7 @@ function Index() {
       <section id="inicio" className="hero-section">
         <div className="hero-media" aria-hidden="true">
           <video className="hero-video" autoPlay muted loop playsInline preload="auto">
-            <source src="/hero-cryofresh.mp4" type="video/mp4" />
+            <source src="/hero-cryofresh-mobile.mp4" type="video/mp4" media="(max-width: 640px)" />\n            <source src="/hero-cryofresh.mp4" type="video/mp4" />
           </video>
           <div className="hero-cooling-flow">
             <span className="air-stream air-stream-1" />
